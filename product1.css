@@ -1,0 +1,51 @@
+.container{
+    border: 2px solid red;
+    height: 100%;
+    width: 100%;
+}
+
+.footer{
+    background-color: #262121;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+}
+
+.coffee-list{
+    list-style-type: disc;
+}
+.pricing-table{
+    width: 100%;
+    border: 2px solid green;
+    font-family: "Arial Black",Gadget, sans-serif;
+    
+}
+.caption-table{
+   
+    color: lightblue;
+}
+th{
+    background-color: green;
+    height 25px;
+    color: white;
+    font-size: 22px;
+}
+td{
+    height: 25px;
+    font-size: 21px;
+    text-align: center;
+    color: brown;
+}
+.tr-in-stock:hover{
+    background-color: lightgreen;
+}
+.tr-out-stock:hover{
+    background-color: lightgrey;
+}
+.coffee-details{
+    background-image:url("img.jpg");
+}

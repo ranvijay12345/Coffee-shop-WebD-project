@@ -1,0 +1,152 @@
+Coffee Card :::::::;
+
+HTML:::::::::
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Learning html</title>
+	<link rel="stylesheet" type="text/css" href="coffeeshop.css">	
+</head>
+
+
+<body>
+	<div class="container">
+		<header class="coffee-header">
+			<div class="div-logo">
+				<img src="coffee-logo.webp">
+				<span class="logo-text">Coffee Shop</span>
+			</div>
+
+			<nav class="coffee-nav">
+				<a href="#">Home</a>
+				<a href="#">Product</a>
+				<a href="#">Price</a>
+				<a href="#">About</a>
+			</nav>
+		</header>
+		<div class="site-content">
+			<div class="image-content">
+				<h1 class="quote">Coffee is the best thing to douse the sunrise with.</h1>
+			</div>
+			<div class="card-list ">
+				<h1 id="product">Product</h1>
+				<div class="card">
+					<img src="mocha-image.png">
+					<div>
+						<h2>Mocha</h2>
+						<h3>&#8377; 250</h3>
+					</div>
+				</div>
+				<div class="card">
+					<img src="cappuccino-image.png">
+					<div>
+						<h2>Cappuccino</h2>
+						<h3>&#8377; 300</h3>
+					</div>
+				</div>
+				<div class="card">
+					<img src="americano-image.png">
+					<div>
+						<h2>Americano</h2>
+						<h3>&#8377; 400</h3>
+					</div>
+				</div>
+				<div class="card">
+					<img src="latte-image.png">
+					<div>
+						<h2>Latte</h2>
+						<h3>&#8377; 450</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+   
+
+
+
+CSS:::::::::::::
+
+
+body{
+	margin: 0px;
+}
+.coffee-header{
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	height: 100px;
+	width: 100%;
+	background-color: #0a2d42;
+	z-index: 100;
+}
+.div-logo{
+	height: 100%;
+	text-align: center;
+	margin: 10px;
+	float: left;
+}
+
+.logo-text{
+	display: block;
+	font-family: "Helvetica Neue";
+	font-weight: bolt;
+	color: white;
+}
+.coffee-nav{
+	float: right;
+	height: 100%;
+}
+
+.coffee-nav a{
+	color: white;
+	font-size: 15px;
+	font-weight: 700;
+	font-family: "Helvetica Neue";
+	padding-right: 20px;
+	padding-top: 12%;
+	display: inline-block;
+}
+
+.site-content{
+	position: absolute;
+	top: 78px;
+	width: 100%;
+}
+.image-content{
+	background-image: url("background-image.jpg");
+	height: 700px;
+	width: 100%;
+	text-align: center;
+}
+
+.quote{
+	color: white;
+	font-family: "Helvetica Neue";
+	position: relative;
+	top: 10%;
+}
+
+.card-list{
+	width: 100%;
+}
+
+#product{
+	text-align: center;
+}
+.card{
+	width: 22%;
+	padding: 1.5%;
+	height: 300px;
+	float:left;
+	text-align: center;
+
+}
+
+.card img{
+	width: 100%;
+}

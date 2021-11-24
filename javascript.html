@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body >
+	
+	<p id="output">Default text</p>
+	<input id="city">
+	<button onclick="update_user()">Submit</button>
+	<script type="text/javascript">
+		function show_temp(){
+			document.getElementById("output").style.color="red";
+			document.getElementById("output").style.fontSize="20px";
+			city = document.getElementById("user_number").value;
+			
+			httpRequest = new XMLHttpRequest();
+			url="https://api.weatherbit.io/v2.0/current?city="+city+"&key=API_KEY&include=minutely"
+			httpRequest.open("GET", url);
+			httpRequest.send();
+
+			httpRequest.onreadystatechange = function(){
+				if(this.readyState == 4 && this.status == 200) {
+					user_data = JSON.parse(this.responseText);
+
+					document.getElementById("output").innerHTML = user_data.data.first_name;
+				}
+			}
+		}
+		
+		
+</script>
+</body>
+</html>
